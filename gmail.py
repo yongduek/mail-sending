@@ -36,7 +36,7 @@ def sendmail2(toaddr):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     #print ('server=', server)
     server.starttls()
-    server.login(fromaddr, "kcvskcvs")
+    server.login(fromaddr, "Password_of_yours")
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
